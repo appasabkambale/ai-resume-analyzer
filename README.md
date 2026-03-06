@@ -10,6 +10,8 @@ Built with a premium dark-mode UI featuring glassmorphism, fluid animations, and
 
 ![Upload Page Preview](public/images/Upload.png)
 
+![Result Page Preview](public/images/Result.png)
+
 ## Features
 
 - � **PDF Resume Upload**: Secure drag-and-drop resume uploading.
