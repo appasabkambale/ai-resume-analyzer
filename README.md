@@ -4,20 +4,21 @@ A modern, production-ready web application that analyzes resumes against job des
 
 Built with a premium dark-mode UI featuring glassmorphism, fluid animations, and a responsive layout.
 
-![Login Page Preview](public/images/Login.png)
-
-![Home Page Preview](public/images/Home.png)
-
-![Upload Page Preview](public/images/Upload.png)
-
-![Result Page Preview](public/images/Result.png)
+<p align="center">
+  <img src="public/images/Login.png" width="48%" alt="Login Page" />
+  <img src="public/images/Home.png" width="48%" alt="Home Page" />
+</p>
+<p align="center">
+  <img src="public/images/Upload.png" width="48%" alt="Upload Page" />
+  <img src="public/images/Result.png" width="48%" alt="Result Page" />
+</p>
 
 ## Features
 
-- � **PDF Resume Upload**: Secure drag-and-drop resume uploading.
+-  **PDF Resume Upload**: Secure drag-and-drop resume uploading.
 - 🤖 **AI-Powered Analysis**: Instant feedback powered by the Puter.js AI API.
 - 🎯 **ATS Scoring**: Calculates an Applicant Tracking System compatibility score based on the target job description.
-- � **Actionable Tips**: Detailed breakdowns on experience, skills, and formatting.
+-  **Actionable Tips**: Detailed breakdowns on experience, skills, and formatting.
 - 🎨 **Premium UI/UX**: Custom dark theme with glassmorphism, vibrant accent gradients, and micro-animations.
 - ⚡️ **React Router + Tailwind CSS**: Fast, modern, and fully responsive frontend.
 
