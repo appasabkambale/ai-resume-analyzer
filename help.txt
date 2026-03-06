@@ -1,1 +1,6 @@
 npm run dev -- -- --host
+
+
+git add .
+git commit -m "feat: add new feature XYZ" 
+git push origin main

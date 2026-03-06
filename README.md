@@ -1,87 +1,85 @@
-# Welcome to React Router!
+# Resumind – AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern, production-ready web application that analyzes resumes against job descriptions using AI, providing an ATS score, detailed feedback, and actionable improvement tips.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Built with a premium dark-mode UI featuring glassmorphism, fluid animations, and a responsive layout.
+
+![Resumind App Preview](public/images/bg-main.svg) <!-- Replace with actual screenshot when available -->
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- � **PDF Resume Upload**: Secure drag-and-drop resume uploading.
+- 🤖 **AI-Powered Analysis**: Instant feedback powered by the Puter.js AI API.
+- 🎯 **ATS Scoring**: Calculates an Applicant Tracking System compatibility score based on the target job description.
+- � **Actionable Tips**: Detailed breakdowns on experience, skills, and formatting.
+- 🎨 **Premium UI/UX**: Custom dark theme with glassmorphism, vibrant accent gradients, and micro-animations.
+- ⚡️ **React Router + Tailwind CSS**: Fast, modern, and fully responsive frontend.
+
+## Tech Stack
+
+- **Framework**: React Router v7
+- **Styling**: Tailwind CSS v4, custom CSS with glassmorphism utility classes
+- **Backend/Services**: Puter.js (Authentication, File Storage, AI inference, Key-Value Store)
+- **Utilities**: `pdfjs-dist` (PDF to Image conversion)
 
 ## Getting Started
 
-### Installation
+Follow these steps to run the project locally on your machine.
 
-Install the dependencies:
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- `npm` (comes with Node.js)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/appasabkambale/ai-resume-analyzer.git
+cd ai-resume-analyzer
+```
+
+### 2. Install Dependencies
+
+Install the required packages using npm:
 
 ```bash
 npm install
 ```
 
-### Development
+### 3. Start the Development Server
 
-Start the development server with HMR:
+Start the local development server:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Your application will be up and running at `http://localhost:5173` (or the next available port). 
 
-## Building for Production
+### 4. Authentication & Usage
 
-Create a production build:
+1. Open `http://localhost:5173` in your browser.
+2. Click **Log In** to authenticate via Puter.com (handles auth seamlessly).
+3. Navigate to the **Upload Resume** page.
+4. Enter the target Company Name, Job Title, and paste the Job Description.
+5. Upload your Resume (PDF format).
+6. Click **Analyze Resume** and wait for the AI to generate your detailed feedback report!
 
-```bash
-npm run build
+## Folder Structure
+
+```text
+├── app/
+│   ├── components/    # Reusable UI components (Navbar, ScoreGauge, etc.)
+│   ├── routes/        # Page routes (home, auth, upload, resume)
+│   ├── lib/           # Utility functions and Puter store configuration
+│   ├── root.tsx       # Root application layout
+│   └── app.css        # Global styles and Tailwind configuration
+├── public/            # Static assets (images, SVGs)
+├── constants/         # Application constants and AI prompt instructions
+└── ...
 ```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ using React Router and Puter.js.

@@ -26,11 +26,11 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-const { init } = usePuterStore();
+  const { init } = usePuterStore();
 
-useEffect(() => {
-init();
-}, [init])
+  useEffect(() => {
+    init();
+  }, [init])
 
   return (
     <html lang="en">
@@ -40,7 +40,7 @@ init();
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-surface-900 text-text-primary antialiased">
         <script src="https://js.puter.com/v2/"></script>
         {children}
         <ScrollRestoration />
@@ -73,10 +73,10 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   return (
     <main className="pt-16 p-4 container mx-auto">
       <h1>{message}</h1>
-      <p>{details}</p>
+      <p className="text-text-secondary mt-4">{details}</p>
       {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
-          <code>{stack}</code>
+        <pre className="w-full p-4 overflow-x-auto glass-card mt-6">
+          <code className="text-accent-rose text-sm">{stack}</code>
         </pre>
       )}
     </main>
