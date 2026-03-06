@@ -4,7 +4,11 @@ A modern, production-ready web application that analyzes resumes against job des
 
 Built with a premium dark-mode UI featuring glassmorphism, fluid animations, and a responsive layout.
 
-![Resumind App Preview](public/images/bg-main.svg) <!-- Replace with actual screenshot when available -->
+![Login Page Preview](public/images/Login.png)
+
+![Home Page Preview](public/images/Home.png)
+
+![Upload Page Preview](public/images/Upload.png)
 
 ## Features
 
